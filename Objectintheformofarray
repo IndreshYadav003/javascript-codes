@@ -1,0 +1,43 @@
+const person=[
+    {
+        id:7,
+        name:"wqwouy",
+        city:"kjfggf"
+    },
+    {
+        id:355,
+        name:"ouyad",
+        city:"sskj"
+    },
+    {
+        id:35,
+        name:"otuy",
+        city:"nnkj"
+    }
+]
+
+
+console.log(person);
+/**
+ * output[
+  { id: 7, name: 'wqwouy', city: 'kjfggf' },
+  { id: 355, name: 'ouyad', city: 'sskj' }, 
+  { id: 35, name: 'otuy', city: 'nnkj' }    
+]
+ */
+//[ '0', '1', '2' ]
+console.log(Object.keys(person)); ////[ '0', '1', '2' ]
+console.log(Object.values(person));/** 
+    { id: 7, name: 'wqwouy', city: 'kjfggf' },
+    { id: 355, name: 'ouyad', city: 'sskj' }, 
+    { id: 35, name: 'otuy', city: 'nnkj' }    
+*/
+console.log(Object.entries(person));
+/**
+ *   [ '0', { id: 7, name: 'wqwouy', city: 'kjfggf' } ],
+  [ '1', { id: 355, name: 'ouyad', city: 'sskj' } ], 
+  [ '2', { id: 35, name: 'otuy', city: 'nnkj' } ]    
+]
+
+ */
+
