@@ -1,0 +1,72 @@
+//1.first we leaarn about forEach()method
+const array=[1,2,3,4,5,6];
+// want to tervarsal every index
+array.forEach((item)=>{
+    console.log(item);
+})
+
+//Three divisor element
+//an other method
+array.forEach((item,index,arr)=>{
+if(item%3===0)
+    console.log(item);
+});
+
+
+// 2.method of array  map()=>alwayes return a new array
+const array1=[1,2,3,4,5,6,7,8,9,87];
+const newArray1=array1.map((num)=>{
+    return num*num;
+})
+console.log(newArray1);
+//an other method
+const array2=[1,2,3,4,5,6,7,8,9,87];
+const newArray2=array2.map((num,index,array)=>{
+    return num*num*num;
+})
+console.log(newArray2);
+//an other method
+const array3=[1,2,3,4,5,6,7,8,9,87];
+const newArray3=array3.map((num,index,array)=>{
+     num*num*num;
+})
+console.log(newArray3);
+/**output of my code
+ * [
+  undefined, undefined,
+  undefined, undefined,
+  undefined, undefined,
+  undefined, undefined,
+  undefined, undefined
+]
+
+ *///
+
+ //an othor method
+ const array4=[1,2,3,4,5,6,7,8,9,87];
+newArray4=array4.map((num,index,array)=> num*num*num);
+console.log(newArray4);
+
+
+
+//3.method  filter()
+const array5=[3,23,244,203,21,22342,1123,13];
+const newArray5=array5.filter((nums,index,arr)=>nums%2===0);
+console.log(newArray5)//index and arr are optional
+//[ 244, 22342 ]
+
+
+//4.method reduce()
+const array6=[4,2,6,5,7,8,9];
+const newarray6=array6.reduce((sum,num,index,array)=>{
+return sum=sum+num;
+},0);
+console.log(newarray6)//41
+
+
+// other method
+const array7 = ['a', 'b', 'c'];
+
+for (const element of array7) {
+  console.log(element);//abc
+}
